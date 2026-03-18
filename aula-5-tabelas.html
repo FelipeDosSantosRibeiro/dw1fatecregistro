@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Tabelas no html5:</h1>
+    <h2>estrutura minima</h2>
+    <!-- estrutura minima e uma tabela -->
+     <table border="1">
+        <!-- linha 1 -->
+        <tr>
+            <td>dado1</td>
+            <td>dado2</td>
+            <td>dado3</td>
+            <td>dado4</td>
+        </tr>
+        <!-- linha 2 -->
+        <tr>
+            <td>dado5</td>
+            <td>dado6</td>
+            <td>dado7</td>
+            <td>dado8</td>
+        </tr>
+     </table>
+     <h3>tabela com cabecario:</h3>
+     <table border="1">
+        <!-- linha 1 -->
+        <tr>
+            <th>
+                produto
+            </th>
+            <th>
+                preco
+            </th>
+        </tr>
+        <tr>
+            <td>notebook</td>
+            <td>R$ 3.000,00</td>
+        </tr>
+     </table>
+
+     <h3>Tabela com titulo</h3>
+     <table border="1">
+        <caption>Tabela de precos</caption>
+        <tr>
+            <th>servico</th>
+            <th>valor</th>
+        </tr>
+        <tr>
+            <td>pintura residencial</td>
+            <td>R$ 2.500,00</td>
+        </tr>
+    </table>
+
+    <h3>Tabela com estrutura semantica</h3>
+    <table border="1">
+        <caption>Vendas do mes</caption>
+        <tr>
+            <th>produto</th>
+            <th>quantidade</th>
+            <th>valor</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>mouse</td>
+                <td>10</td>
+                <td>R$ 20,00</td>
+            </tr>
+        </tbody>
+        <!-- footer -->
+         <tfoot>
+            <tr>
+                <td colspan="2">total</td>
+                <td>R$ 200,00</td>
+            </tr>
+         </tfoot>
+    </table>
+
+    <h3>mesclando linha</h3>
+        <table border="1">
+        <caption>Vendas do mes</caption>
+        <tr>
+            <th>produto</th>
+            <th>quantidade</th>
+            <th>valor</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td rowspan="2">mouse</td>
+                <td>10</td>
+                <td>R$ 20,00</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>R$ 25,00</td>
+            </tr>
+        </tbody>
+        <!-- footer -->
+         <tfoot>
+            <tr>
+                <td colspan="2">total</td>
+                <td>R$ 200,00</td>
+            </tr>
+         </tfoot>
+    </table>
+
+    <h3>tabela com atributo scope</h3>
+    <table border="1">
+        <caption>notas dos alunos por diciplina</caption>
+        <thead>
+            <tr>
+                <th scope="col">aluno</th>
+                <th scope="col">desenvolcimento web</th>
+                <th scope="col">design digital</th>
+                <th scope="col">banco de dados</th>
+                <th scope="col">algoritimos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">ana</th>
+                <td>8.5</td>
+                <td>9</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+                        <tr>
+                <th scope="row">bruno</th>
+                <td>7.5</td>
+                <td>8</td>
+                <td>10</td>
+                <td>0</td>
+            </tr>
+                        <tr>
+                <th scope="row">carlos</th>
+                <td>9.5</td>
+                <td>10</td>
+                <td>9</td>
+                <td>8.5</td>
+            </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
