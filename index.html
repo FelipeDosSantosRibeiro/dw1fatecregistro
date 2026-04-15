@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pseudo elemento</title>
+    <title>esquemas de posicionamento</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Demostracao de pseudo-elementos</h1>
-
-    <h2 > ::before adiciona conteudo antes do elemento</h2>
-    <p class="antes depois">Este paragrafo tem conteudo adicionado antes atraves do ::before e Depois atraves do after</p>
-    <p class="antes">Outro paragrafo</p>
-
-    <hr>
-
-    <h2>Exemplo pratica de ::before e ::after (citacoes)</h2>
-    <blockquote class="citacao">
-        So sei que nada sei -socrates 399 a.c
-    </blockquote>
-
-    <blockquote class="citacao">impossivel derrubar quem ja nace caido - luiz henrique, 2026</blockquote>
-    
+    <h2>posiotions -comparacao visual</h2>
+    <div class="caixa static">static</div>
+    <div class="caixa relative">relative</div>
+    <div class="container">
+        container pai
+        <div class="caixa absolute">
+            absolute
+        </div>
+    </div>
+    <div class="caixa fixed">fixed</div>
+    <br>
+    <p>role a pagina pra ver o elemento fixed parado acompanhando a tela</p>
 </body>
 </html>

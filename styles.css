@@ -1,63 +1,44 @@
-body{
-    font-family: Verdana;
-    background-color: rgb(44, 44, 44);
-    color: white;
-    padding: 20px;
-    line-height: 1.6px;
-
+.caixa{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: lightgray;
 }
 
-p{
-    font-size: 18px;
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: darkmagenta;
-    border-radius: 5px;
-
+.static{
+    position: static;
+    background-color: lightcoral;
 }
 
-.antes::before {
-    content: "➤  ";
-    color: yellow;
-    font-weight: bold;
-    font-size: 24px;
-    margin-left: 10px;
-
-}
-
-.depois::after{
-    content: "✓  ";
-    color: yellow;
-    font-weight: bold;
-    font-size: 24px;
-    margin-left: 10px;
-}
-
-.citacao{
-    background-color: darkmagenta;
-    border-left: 5px solid yellow;
-    font-style: italic;
-    font-size: 20px;
-    margin: 20px 0;
-    padding: 30px 40px;
+.relative{
     position: relative;
+    background-color: lightgreen;
+    top: 50px;
+    left: 200px;
+
 }
 
-.citacao::before {
-    content: '"';
-    top: -5px;
-    left: 10px;
-    font-size: 80px;
-    color: yellow;
-    opacity: 0.3;
-    position: absolute;
+.container{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+    border: 1px dashed;
+    background-color: lightsalmon;
 }
-.citacao::after {
-    content: '"';
-    bottom: -5px;
-    right: 50px;
-    font-size: 80px;
-    color: yellow;
-    opacity: 0.3;
+
+.absolute{
     position: absolute;
+    margin: 0px;
+    background-color: lightskyblue;
+    top: -320px;
+    left: 50px;
+    z-index: 2;
+}
+.fixed{
+    position: fixed;
+    background-color: limegreen;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
 }
