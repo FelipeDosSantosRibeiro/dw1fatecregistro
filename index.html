@@ -3,21 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>esquemas de posicionamento</title>
+    <title>flexbox direção e alinhamento</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>posiotions -comparacao visual</h2>
-    <div class="caixa static">static</div>
-    <div class="caixa relative">relative</div>
-    <div class="container">
-        container pai
-        <div class="caixa absolute">
-            absolute
-        </div>
+    <h2>flexbox direção e alinhamento</h2>
+
+    <p>linha ao centro</p>
+    <div class="flex-container row-center">
+        <div class="card">A</div>
+        <div class="card">B</div>
+        <div class="card">C</div>
+        
     </div>
-    <div class="caixa fixed">fixed</div>
-    <br>
-    <p>role a pagina pra ver o elemento fixed parado acompanhando a tela</p>
+    <P>Coluna a esquerda</P>
+
+    <div class="flex-container colum-left">
+        <div class="card">A</div>
+        <div class="card">B</div>
+        <div class="card">C</div>
+        
+    </div>
+
+    <p> linha espacada (space between)</p>
+    <div class="flex-container spaced">
+        <div class="card">A</div>
+        <div class="card">B</div>
+        <div class="card">C</div>
+        
+    </div>
+
+    <p>quebra de linha (wrap)</p>
+     
+    <div class="flex-container wrap">
+        <div class="card">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+        <div class="card">4</div>
+        <div class="card">5</div>
+        <div class="card">6</div>
+        <div class="card">7</div>
+        <div class="card">8</div>
+        <div class="card">9</div>
+        <div class="card">10</div>
+        <div class="card">11</div>
+        <div class="card">12</div>
+        <div class="card">13</div>
+        <div class="card">14</div>
+        <div class="card">15</div>
+        
+    </div>
+
 </body>
 </html>
